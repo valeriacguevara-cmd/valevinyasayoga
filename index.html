@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,500&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+ 
 </head>
 <body>
 
@@ -117,39 +118,46 @@
     <h2 class="section-head">On the mat</h2>
     <p class="section-lede">A look at practice, in and out of the studio.</p>
 
-    <div class="gallery-grid">
-      <figure class="gallery-item span-tall">
-        <div class="gallery-placeholder"><span>+ Add photo</span></div>
-        <img src="images/gallery-1.jpg" alt="Valeria in a power vinyasa flow" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>Power flow, studio session</figcaption>
-      </figure>
-      <figure class="gallery-item span-wide">
-        <div class="gallery-placeholder"><span>+ Add photo</span></div>
-        <img src="images/gallery-2.jpg" alt="Backbend workshop, wheel pose assist" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>Backbend workshop</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <div class="gallery-placeholder"><span>+ Add photo</span></div>
-        <img src="images/gallery-3.jpg" alt="Handstand drill against the wall" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>Handstand drill</figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <div class="gallery-placeholder"><span>+ Add photo</span></div>
-        <img src="images/gallery-4.jpg" alt="Slow flow class, seated stretch" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>Slow flow class</figcaption>
-      </figure>
-      <figure class="gallery-item span-tall">
-        <div class="gallery-placeholder"><span>+ Add photo</span></div>
-        <img src="images/gallery-5.jpg" alt="Hip opener workshop, pigeon pose" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>Hip opener workshop</figcaption>
-      </figure>
-      <figure class="gallery-item span-wide">
-        <div class="gallery-placeholder"><span>+ Add photo</span></div>
-        <img src="images/gallery-6.jpg" alt="One-on-one private session" loading="lazy" onerror="this.style.display='none'">
-        <figcaption>Private session</figcaption>
-      </figure>
+       <div class="gallery-carousel">
+      <button class="carousel-arrow prev" id="carouselPrev" aria-label="Previous photo">‹</button>
+
+      <div class="carousel-track" id="carouselTrack">
+        <figure class="carousel-slide">
+          <div class="gallery-placeholder"><span>+ Add photo</span></div>
+          <img src="images/gallery-1.jpg" alt="Valeria in a power vinyasa flow" loading="lazy" onerror="this.style.display='none'">
+          <figcaption>Power flow, studio session</figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <div class="gallery-placeholder"><span>+ Add photo</span></div>
+          <img src="images/gallery-2.jpg" alt="Backbend workshop, wheel pose assist" loading="lazy" onerror="this.style.display='none'">
+          <figcaption>Backbend workshop</figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <div class="gallery-placeholder"><span>+ Add photo</span></div>
+          <img src="images/gallery-3.jpg" alt="Handstand drill against the wall" loading="lazy" onerror="this.style.display='none'">
+          <figcaption>Handstand drill</figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <div class="gallery-placeholder"><span>+ Add photo</span></div>
+          <img src="images/gallery-4.jpg" alt="Slow flow class, seated stretch" loading="lazy" onerror="this.style.display='none'">
+          <figcaption>Slow flow class</figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <div class="gallery-placeholder"><span>+ Add photo</span></div>
+          <img src="images/gallery-5.jpg" alt="Hip opener workshop, pigeon pose" loading="lazy" onerror="this.style.display='none'">
+          <figcaption>Hip opener workshop</figcaption>
+        </figure>
+        <figure class="carousel-slide">
+          <div class="gallery-placeholder"><span>+ Add photo</span></div>
+          <img src="images/gallery-6.jpg" alt="One-on-one private session" loading="lazy" onerror="this.style.display='none'">
+          <figcaption>Private session</figcaption>
+        </figure>
+      </div>
+
+      <button class="carousel-arrow next" id="carouselNext" aria-label="Next photo">›</button>
     </div>
-  </section>
+
+    <div class="carousel-dots" id="carouselDots"></div>
 
   <!-- ============ PRIVATES ============ -->
   <section class="panel blush" id="privates">
